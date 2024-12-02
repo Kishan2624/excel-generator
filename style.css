@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Form Styles */
+form {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+/* Form Heading */
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+  background-color: #f4f4f9; /* Match background color */
+  padding: 0 10px; /* Add padding to prevent clipping */
+}
+
+/* Labels and Inputs */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="file"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+#checkboxContainer {
+  display: flex;
+  flex-wrap: wrap; /* This ensures the items wrap to the next line if necessary */
+  gap: 15px; /* Adds spacing between the checkboxes */
+  justify-content: flex-start; /* Aligns items to the left */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#checkboxContainer input[type="checkbox"] {
+  margin-right: 5px; /* Space between checkbox and label */
+}
+
+#checkboxContainer label {
+  font-size: 14px; /* Adjust label size if needed */
+  margin-bottom: 10px; /* Space between the rows */
+}
+
+/* Hidden Class */
+.hidden {
+  display: none;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}

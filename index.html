@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Excel Filter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Dynamic Student Data Filter</h1>
+    <form id="excelForm">
+      <label for="excelFile">Upload Excel File:</label>
+      <input
+        type="file"
+        id="excelFile"
+        accept=".xlsx, .xls"
+        required
+      /><br /><br />
+
+      <div id="dynamicInputs" class="hidden">
+        <label for="studentName">Student Names (comma-separated):</label>
+        <input
+          type="text"
+          id="studentName"
+          name="studentName"
+          placeholder="e.g., john, jane, jill"
+        />
+        <br /><br />
+
+        <h3>Select Fields to Include:</h3>
+        <div id="checkboxContainer">
+          <!-- Checkboxes will be dynamically added here -->
+        </div>
+      </div>
+
+      <button type="submit">Generate Excel</button>
+    </form>
+
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
